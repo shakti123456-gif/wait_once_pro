@@ -81,27 +81,10 @@ WSGI_APPLICATION = 'backend_config.wsgi.application'
 
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'your_database',
-#         'USER': 'xyz',
-#         'PASSWORD': 'your_password',
-#         'HOST': 'medical-server.mysql.database.azure.com',
-#         'PORT': '3306',
-#         'OPTIONS': {
-#             'ssl': {
-#                 'ca': '/path/to/ca-cert.pem',
-#             }
-#         },
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
 
