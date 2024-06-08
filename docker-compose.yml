@@ -1,0 +1,22 @@
+version: '3.9'
+
+
+services:
+  db:
+    image: mysql:8.0
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: client_database
+      MYSQL_ROOT_PASSWORD: Current-Root-Password
+
+      # MYSQL_ROOT_PASSWORD
+      # MYSQL_ALLOW_EMPTY_PASSWORD
+      # MYSQL_RANDOM_ROOT_PASSWORD
+      
+    ports:
+      - "3307:3306"
+
+volumes:
+  mysql_data:
+
